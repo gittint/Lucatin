@@ -425,7 +425,7 @@ html{
 
 .body__item{
     display: flex;
-    min-height: 90vh;
+    min-height: 100vh;
 }
 
 .body__item:nth-child(2n){
@@ -495,5 +495,67 @@ html{
 }
 
 .body__item:nth-child(5) .body__lable{
+    background-color: var(--brown-rgba);
+}
+
+.body__item:nth-child(6) .body__lable{
     background-color: var(--yellow-rgba);
+}
+
+.body__slide{
+    width: 100%;
+    height: 140vh;
+    position: relative;
+    background-color: rgba(75, 74, 74, 0.9);
+}
+
+.body__slide-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+}
+
+.body__slide-img.body__slide-img--active{
+    display: block;
+    animation: Appear ease 0.5s;
+}
+
+.body__slide-icon--list{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 3.5%;
+    width: 100%;
+}
+
+.body__slide-icon--item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    font-size: 8px;
+    line-height: 8px;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    width: 16px;
+    height: 15px;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.body__slide-icon--item i{
+    visibility: hidden;
+    animation: Disappear ease 0.5s;
+    transition: 0.5s;
+}
+
+.body__slide-icon--item.body__slide-icon--item-active i{
+    visibility: visible;
+    animation: none;
+}
+
+.body__slide-icon--item:hover i{
+    visibility: visible;
+    animation: Appear ease 0.5s;
 }

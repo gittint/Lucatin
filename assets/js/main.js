@@ -1,9 +1,9 @@
-//Xử lý animation Slide 
+//Xử lý animation Slide 1
 var slideimgs = document.querySelectorAll(".slide__item--img");
 console.log(slideimgs.length);
 
 function Appearimg(n){
-    var i;
+    let i;
     for(i=0;i<slideimgs.length;i++){
         slideimgs[i].classList.remove('slide__item--img-active');
     }
@@ -36,9 +36,8 @@ function clickresiconX(){
 
 //Xử lý Modal nav menu
 
-var menuicon = document.querySelector(".nav__menu");
-var menuiconX = document.querySelector(".modal__nav-menu--icon-box");
 var modalmenu = document.querySelector(".modal__nav-menu");
+var modalmenulink = document.querySelectorAll(".modal__nav-menu__item--link");
 
 function clickmenuicon(){
     modalmenu.classList.add("modal__nav-menu--active");
@@ -46,4 +45,22 @@ function clickmenuicon(){
 
 function clickmenuiconX(){
     modalmenu.classList.remove("modal__nav-menu--active");
+}
+
+//Xử lý body slide
+
+var bodyslidedots = document.querySelectorAll(".body__slide-icon--item");
+var bodyslideimgs = document.querySelectorAll(".body__slide-img");
+
+function clickdot(n){
+    let i;
+    for(i=0;i<bodyslideimgs.length;i++){
+        bodyslideimgs[i].classList.remove("body__slide-img--active");
+    }
+    bodyslideimgs[n].classList.add("body__slide-img--active");
+
+    for(i=0;i<bodyslidedots.length;i++){
+        bodyslidedots[i].classList.remove("body__slide-icon--item-active");
+    }
+    bodyslidedots[n].classList.add("body__slide-icon--item-active");
 }
