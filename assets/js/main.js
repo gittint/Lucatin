@@ -20,6 +20,20 @@ var auto = setInterval(function(){
     return x;
 },5000);
 
+//Xử lý Modal nav rex box
+
+var resicon = document.querySelector(".nav__item-resicon");
+var resiconX = document.querySelector(".modal__nav-res--header-icon");
+var modalres = document.querySelector(".modal__nav-res-box");
+
+function clickresicon(){
+    modalres.classList.add("modal__nav-res-box--active");
+}
+
+function clickresiconX(){
+    modalres.classList.remove("modal__nav-res-box--active");
+}
+
 //Xử lý Modal nav menu
 
 var menuicon = document.querySelector(".nav__menu");

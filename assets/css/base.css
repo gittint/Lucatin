@@ -6,6 +6,11 @@
 :root{
     --white : white;
     --black : black;
+    --white-rgba : rgba(224, 224, 224, 0.8);
+    --pink-rgba : rgba(230,113,90, 0.7);
+    --orange-rgba : rgba(217,84,29, 0.7);
+    --brown-rgba : rgba(209,194,164, 0.7);
+    --yellow-rgba : rgba(219,209,106, 0.7);
 }
 
 html{  

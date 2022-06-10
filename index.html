@@ -26,39 +26,62 @@
         <div class="header">
             <div class="nav">
                 <ul class="nav__list">
-                    <li class="nav__item--primary">
-                        <a href="#" class="nav__item--link">Reservations</a>
+                    <li class="nav__item--primary nav__item-resicon" onclick="clickresicon()">
+                        <div class="nav__item--link">Reservations</div>
                     </li>
                     <li class="nav__item">
                         <a href="#" class="nav__item--link">Menu</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#" class="nav__item--link">Private Dining</a>
+                        <a href="#privatedining" class="nav__item--link">Private Dining</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#" class="nav__item--link">Terrace</a>
+                        <a href="#terrace" class="nav__item--link">Terrace</a>
                     </li>
                     <li class="nav__item">
                         <a href="#" class="nav__item--link">Careers</a>
                     </li>
                 </ul>
                 <div class="nav__menu" onclick="clickmenuicon()">
-                    <a href="#" class="nav__menu--link">
+                    <div class="nav__menu--link">
                         <i class="fa-solid fa-bars"></i>
-                    </a>
+                    </div>
                 </div>
             </div>
 
             <div class="header__modal">
+                <div class="modal__nav-res-box">
+                    <div class="modal__nav-res">
+                        <div class="modal__nav-res--header">
+                            <img src="./assets/img/slide-1-1.jpg" alt="" class="modal__nav-res--header-img">
+                            <div class="modal__nav-res--header-logo-box">
+                                <img src="./assets/img/Lucatin_white_logo2.png" alt="" class="modal__nav-res--header-logo">
+                            </div>
+                            <div class="modal__nav-res--header-icon" onclick="clickresiconX()"><i class="fa-solid fa-x"></i></div>
+                        </div>
+                        <div class="modal__nav-res--body">
+                            <div class="modal__nav-res--notice">
+                                Online bookings available for up to 18 guests.
+                            </div>
+                            <div class="modal__nav-res--date">
+                                <div class="modal__nav-res--date-check">Check bookings day available</div>
+                                <input class="modal__nav-res--date-choose" type="date">
+                                <div class="modal__nav-res--date-search">Search</div>
+                                <div class="modal__nav-res--date-end">powered by SEVENROOMS</div> 
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+
                 <div class="modal__nav-menu">
                     <div class="modal__nav-menu--header">
                         <div class="modal__nav-menu--header-img-box">
                             <img class="modal__nav-menu--header-img" src="./assets/img/Lucatin_logo2.png" alt="">
                         </div>
                         <div class="modal__nav-menu--icon-box" onclick="clickmenuiconX()">
-                            <a href="#" class="modal__nav-menu--icon">
+                            <div class="modal__nav-menu--icon">
                                 <i class="fa-solid fa-x"></i>
-                            </a>
+                            </div>
                         </div>
                     </div>
         
@@ -137,8 +160,101 @@
                 </div>
             </div>
 
-            <div class="body_header">
+            <div class="body__header">
+                British seasonal ingredients through an Italian lens
             </div>
+
+            <div class="body__list">
+
+                <!-- restaurant  -->
+                <div class="body__item" id="restaurant">
+                    <div class="body__lable">
+                        <div class="body__lable-header">Restaurant</div>
+                        <div class="body__lable-body">
+                            The restaurant serves high-quality ingredients from around the British Isles and Italy. 
+                            Seasonal produce such as shrimps from Morecambe Bay, grouse from Yorkshire, 
+                            langoustines from Scotland and cheeses from across the country. 
+                            It is food that observes the established traditions of Italian cooking, but breaks the rules a little.
+                        </div>
+                        <div class="body__lable-btn">Book a table</div>
+                    </div>
+    
+                    <div class="body__picture">
+                        <img src="./assets/img/body-1.jpg" alt="" class="body__picture-img">
+                    </div>
+                </div>
+
+                <!-- Terrace  -->
+                <div class="body__item" id="terrace">
+                    <div class="body__lable">
+                        <div class="body__lable-header">Terrace</div>
+                        <div class="body__lable-body">
+                            8 - 18 guests.Dine al fresco on our secluded, foliage-filled terrace, surrounded by olive trees and jasmine.
+                        </div>
+                        <div class="body__lable-body">
+                            Whether bathed in sunshine for lunch or warmed by the open fire for dinner, it's the perfect spot for any occasion all year round.
+                        </div>
+                        <div class="body__lable-body">
+                            Email our team at privatedining@luca.restaurant for more information or click below to view our brochure.
+                        </div>
+                        <div class="body__lable-btn">Brochure</div>
+                    </div>
+    
+                    <div class="body__picture">
+                        <img src="./assets/img/body-2.jpg" alt="" class="body__picture-img">
+                    </div>
+                </div>
+
+                <!-- Lucabar  -->
+                <div class="body__item" id="lucabar">
+                    <div class="body__lable">
+                        <div class="body__lable-header">Lucabar</div>
+                        <div class="body__lable-body">
+                            Franciacorta, Negronis, Grappa & freshly shaken cocktails. 
+                            Things to share - Parmesan fries, salumi, pasta. Take a seat in one of our iconic booths or at our marble bar for a drink, 
+                            light bite or to settle in for the night.
+                        </div>
+                        <div class="body__lable-btn">Book a table</div>
+                    </div>
+    
+                    <div class="body__picture">
+                        <img src="./assets/img/body-3.jpg" alt="" class="body__picture-img">
+                    </div>
+                </div>
+
+                <!-- Privatedining  -->
+                <div class="body__item" id="privatedining">
+                    <div class="body__lable">
+                        <div class="body__lable-header">Privatedining</div>
+                        <div class="body__lable-body">
+                            We have two private dining rooms,
+                            The Garden Room and The Pasta Room, which can accommodate up to eight and 10 guests as well as The Terrace which can accommodate up to 18 guests.
+                            Click here to view our brochure.
+                            For more information please email our events team at privatedining@luca.restaurant
+                        </div>
+                        <div class="body__lable-btn">Book a table</div>
+                    </div>
+    
+                    <div class="body__picture">
+                        <img src="./assets/img/body-4.jpg" alt="" class="body__picture-img">
+                    </div>
+                </div>
+
+                <!-- Gifts & Experiences  -->
+                <div class="body__item" id="giftsexperiences">
+                    <div class="body__lable">
+                        <div class="body__lable-header">Gifts & Experiences</div>
+                        <div class="body__lable-body">
+                            We have a selection of gift vouchers and experiences available.                        </div>
+                        <div class="body__lable-btn">Book a table</div>
+                    </div>
+    
+                    <div class="body__picture">
+                        <img src="./assets/img/body-5.jpg" alt="" class="body__picture-img">
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 

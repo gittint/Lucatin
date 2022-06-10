@@ -1,6 +1,7 @@
 
 html{
     position: relative;
+    scroll-behavior:smooth ; /*Hành vi khi cuộn trang web*/
 }
 
 .background{
@@ -38,12 +39,17 @@ html{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
 }
 
 .nav__item--primary{
     background-color: var(--white);
     padding: 10px;
     margin-right: 10px;
+}
+
+.nav__item-resicon{
+    cursor: pointer;
 }
 
 .nav__item{
@@ -108,6 +114,103 @@ html{
     color: var(--white);
 }
 
+/* Modal nav res  */
+.modal__nav-res-box{
+    visibility: hidden;
+    background-color: rgba(75, 74, 74, 0.9);
+    animation: Disappear ease 0.3s;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    height: 100vh;
+    z-index: 4;
+    transition: 0.3s;
+}
+
+.modal__nav-res-box.modal__nav-res-box--active{
+    visibility: visible;
+    animation: Appear ease 0.3s;
+    transition: 0.3s;
+}
+
+.modal__nav-res{
+    width: 45%;
+    margin: 50px auto 20px;
+}
+
+.modal__nav-res--header{
+    width: 100%;
+    height: 40vh;
+    position: relative;
+}
+
+.modal__nav-res--header-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.modal__nav-res--header-icon{
+    position: absolute;
+    top: -10%;
+    right: 1%;
+    cursor: pointer;
+    color: var(--white);
+    font-size: 22px;
+
+}
+
+.modal__nav-res--header-logo-box{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    top: 30%;
+    left: 0%;
+}
+
+.modal__nav-res--header-logo{
+    width: 50%;
+    margin: auto;
+}
+
+.modal__nav-res--body{
+    background-color: var(--white);
+}
+
+.modal__nav-res--notice{
+    background-color: #eeeeee;
+    text-align: center;
+    font-size: 16px;
+    padding: 15px 0 15px 0;
+}
+
+.modal__nav-res--date{
+    text-align: center;
+    font-size: 16px;
+    padding: 15px 0 15px 0;
+}
+
+.modal__nav-res--date-choose{
+    width: 50%;
+    height: 30px;
+    margin: 15px 0 15px 0;
+}
+
+.modal__nav-res--date-search{
+    background-color: var(--black);
+    color: var(--white);
+    width: 90%;
+    margin: 20px auto 30px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.modal__nav-res--date-end{
+    text-align: center;
+    font-size: 16px;
+    padding-top: 30px;
+}
 
 /* Modal  nav menu*/
 
@@ -302,4 +405,95 @@ html{
     font-weight: 400;
 }
 
-/* body head */
+/* body*/
+
+.body__header{
+    display: none;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    color: var(--black);
+    background-color: var(--white-rgba);
+}
+
+.body__list{
+    background-color: none;
+}
+
+.body__item{
+    display: flex;
+    min-height: 90vh;
+}
+
+.body__item:nth-child(2n){
+    flex-direction: row-reverse;
+}
+
+.body__lable{
+    width: 50%;
+    min-height: 90vh;
+    text-align: center;
+}
+
+.body__picture{
+    width: 50%;
+}
+
+.body__picture-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.body__lable-header{
+    margin: 80px 0px 40px 0px;  
+    font-size: 40px;  
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+}
+
+.body__lable-body{
+    max-width: 50%;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 40px auto 40px;
+}
+
+.body__lable-btn{
+    border: 1px solid var(--black);
+    width: 200px;
+    padding: 15px 10px;
+    margin: 10px auto 30px;
+    font-size: 22px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.body__lable-btn:hover{
+    background-color: var(--white);
+    border: 1px solid var(--white);
+}
+
+.body__item:nth-child(1) .body__lable{
+    background-color: var(--pink-rgba);
+}
+
+.body__item:nth-child(2) .body__lable{
+    background-color: var(--orange-rgba);
+}
+
+.body__item:nth-child(3) .body__lable{
+    background-color: var(--brown-rgba);
+}
+
+.body__item:nth-child(4) .body__lable{
+    background-color: var(--brown-rgba);
+}
+
+.body__item:nth-child(5) .body__lable{
+    background-color: var(--yellow-rgba);
+}
