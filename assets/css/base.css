@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --white : white;
+    --black : black;
+}
+
+html{  
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Joan', serif;
+    font-family: 'Charis SIL', serif;
+    position: relative;
+}
+
+ul{
+    padding-left: 0px;
+    margin-left: 0px;
+    list-style: none;
+}
+
+li{
+    padding-left: 0px;
+    margin-left: 0px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+@keyframes Appear {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes Disappear {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}

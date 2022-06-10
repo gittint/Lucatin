@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucatin</title>
+    <!-- reset css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!-- css  -->
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- font chu-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Charis+SIL:ital,wght@0,400;0,700;1,400;1,700&family=Joan&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!-- icon -->
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-6.1.1-web/css/all.min.css">
+</head>
+<body>
+    <div class="app">
+        <div class="background">
+            <img class="background--img" src="./assets/img/slide-1-1.jpg" alt="">
+        </div>
+
+        <div class="header">
+            <div class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item--primary">
+                        <a href="#" class="nav__item--link">Reservations</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__item--link">Menu</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__item--link">Private Dining</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__item--link">Terrace</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__item--link">Careers</a>
+                    </li>
+                </ul>
+                <div class="nav__menu" onclick="clickmenuicon()">
+                    <a href="#" class="nav__menu--link">
+                        <i class="fa-solid fa-bars"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="header__modal">
+                <div class="modal__nav-menu">
+                    <div class="modal__nav-menu--header">
+                        <div class="modal__nav-menu--header-img-box">
+                            <img class="modal__nav-menu--header-img" src="./assets/img/Lucatin_logo2.png" alt="">
+                        </div>
+                        <div class="modal__nav-menu--icon-box" onclick="clickmenuiconX()">
+                            <a href="#" class="modal__nav-menu--icon">
+                                <i class="fa-solid fa-x"></i>
+                            </a>
+                        </div>
+                    </div>
+        
+                    <ul class="modal__nav-menu__list">
+                        <li class="modal__nav-menu__item">
+                            <a href="#" class="modal__nav-menu__item--link">Restaurant</a>
+                        </li>
+                        <li class="modal__nav-menu__item">
+                            <a href="#" class="modal__nav-menu__item--link">Terrace</a>
+                        </li>
+                        <li class="modal__nav-menu__item">
+                            <a href="#" class="modal__nav-menu__item--link">Lucabar</a>
+                        </li>
+                        <li class="modal__nav-menu__item">
+                            <a href="#" class="modal__nav-menu__item--link">Gallery</a>
+                        </li>
+                        <li class="modal__nav-menu__item">
+                            <a href="#" class="modal__nav-menu__item--link">Privatedining</a>
+                        </li>
+                        <li class="modal__nav-menu__item">
+                            <a href="#" class="modal__nav-menu__item--link">Gifts & Experiences</a>
+                        </li>
+                        <li class="modal__nav-menu__item">
+                            <a href="#" class="modal__nav-menu__item--link">Reservation</a>
+                        </li>
+                        <li class="modal__nav-menu__item">
+                            <a href="#" class="modal__nav-menu__item--link">Menus</a>
+                        </li>
+                        <li class="modal__nav-menu__item">
+                            <a href="#" class="modal__nav-menu__item--link">Press & Accolades</a>
+                        </li>
+                        <li class="modal__nav-menu__item">
+                            <a href="#" class="modal__nav-menu__item--link">Hours & Location</a>
+                        </li>
+                        <li class="modal__nav-menu__item">
+                            <a href="#" class="modal__nav-menu__item--link">Careers</a>
+                        </li>
+                    </ul>
+        
+                    <div class="modal__nav-menu__footer">
+                        <a href="#" class="modal__nav-menu__footer--link"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="slide">
+                <div class="slide__list">
+                    <img class="slide__item--img slide__item--img-active" src="./assets/img/slide-1-1.jpg" alt="">
+                    <img class="slide__item--img" src="./assets/img/slide-1-2.jpg" alt="">
+                    <img class="slide__item--img" src="./assets/img/slide-1-3.jpg" alt="">
+                    <img class="slide__item--img" src="./assets/img/slide-1-4.jpg" alt="">
+                    <img class="slide__item--img" src="./assets/img/slide-1-5.jpg" alt="">
+                    <img class="slide__item--img" src="./assets/img/slide-1-6.jpg" alt="">
+
+                    <div class="slide__logo">
+                        <div class="slide__logo--img-box">
+                            <img class="slide__logo--img" src="./assets/img/Lucatin_white_logo2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="slide__footer">
+                        <div class="slide__footer--ins">
+                            <a href="#" class="slide__footer--item-link">Instagram</a>
+                        </div>
+                        <ul class="slide__footer--list">
+                            <li class="slide__footer--item">
+                                <a href="#" class="slide__footer--item-link">0923092001</a>
+                            </li>
+                            <li class="slide__footer--item">
+                                <a href="#" class="slide__footer--item-link">88 St John St, Clerkenwell, London EC1M 4EH</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="body_header">
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
+
+<!-- echo "# Lucatin" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/gittint/Lucatin.git
+git push -u origin main -->
