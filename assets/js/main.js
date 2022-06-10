@@ -22,8 +22,6 @@ var auto = setInterval(function(){
 
 //Xử lý Modal nav rex box
 
-var resicon = document.querySelector(".nav__item-resicon");
-var resiconX = document.querySelector(".modal__nav-res--header-icon");
 var modalres = document.querySelector(".modal__nav-res-box");
 
 function clickresicon(){
@@ -37,7 +35,6 @@ function clickresiconX(){
 //Xử lý Modal nav menu
 
 var modalmenu = document.querySelector(".modal__nav-menu");
-var modalmenulink = document.querySelectorAll(".modal__nav-menu__item--link");
 
 function clickmenuicon(){
     modalmenu.classList.add("modal__nav-menu--active");
@@ -64,3 +61,25 @@ function clickdot(n){
     }
     bodyslidedots[n].classList.add("body__slide-icon--item-active");
 }
+
+//Xử lý Press & Accolades
+
+var presslist = document.querySelectorAll(".body__press--item");
+
+function Appearpress(n){
+    let i;
+    for(i=0;i<presslist.length;i++){
+        presslist[i].classList.remove("body__press--item-active");
+    }
+    presslist[n].classList.add("body__press--item-active");
+}
+
+var y=1;
+var auto2 = setInterval(function(){
+    Appearpress(y)
+    y=y+1;
+    if(y >= presslist.length){
+        y=0;
+    }
+    return y;
+},3000);
