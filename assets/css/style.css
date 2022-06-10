@@ -501,7 +501,7 @@ html{
 }
 
 .body__item:nth-child(4) .body__lable{
-    background-color: var(--brown-rgba);
+    background-color: var(--green-rgba);
 }
 
 .body__item:nth-child(5) .body__lable{
@@ -511,6 +511,33 @@ html{
 .body__item:nth-child(6) .body__lable{
     background-color: var(--yellow-rgba);
 }
+
+/* body item map  */
+.body__item.body__item-map .body__lable{
+    background-color: var(--blue-rgba);
+    color: var(--white);
+}
+
+.body__item-map--btn{
+    border: 1px solid var(--white);
+}
+
+.body__item-map--btn:hover{
+    color: var(--black);
+}
+
+.body__lable-body--heading{
+    text-decoration: underline;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.body__lable-body-map{
+    max-width: 80%;
+}
+
+
+/* body slide  */
 
 .body__slide{
     width: 100%;
@@ -590,7 +617,7 @@ html{
 
 .body__content-header{
     padding: 80px 0px 40px 0px;  
-    font-size: 40px;  
+    font-size: 60px;  
     font-weight: 100;
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
@@ -677,3 +704,5 @@ html{
     max-width: 100%;
     padding-bottom: 20px;
 }
+
+/* Footer  */
