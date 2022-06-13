@@ -14,6 +14,11 @@
     --blue-rgba : rgba(41,60,104,0.7);
     --gold-rgba : rgba(147,116,58,0.7);
     --green-rgba : rgba(156,202,186,0.7);
+    --yellow : rgb(233,227,164);
+    --yellow-hover : rgb(239, 237, 203);
+    --yellow-logo: #ffffc8;
+    --end-text: #c2be91;
+    --end-text-hover : #888576;
 }
 
 html{  
@@ -53,5 +58,41 @@ a{
     }
     100%{
         opacity: 0;
+    }
+}
+
+@keyframes Hoverbtn{
+    0%{
+        background-color: var(--color);
+    }
+    100%{
+        background-color: var(--hover-color);
+    }
+}
+
+@keyframes Hoveroutbtn{
+    0%{
+        background-color: var(--hover-color);
+    }
+    100%{
+        background-color: var(--color);
+    }
+}
+
+@keyframes Hovertext{
+    0%{
+        color: var(--color);
+    }
+    100%{
+        color: var(--hover-color);
+    }
+}
+
+@keyframes Hoverouttext{
+    0%{
+        color: var(--hover-color);
+    }
+    100%{
+        color: var(--color);
     }
 }

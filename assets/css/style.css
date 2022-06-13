@@ -492,11 +492,16 @@ html{
     font-size: 22px;
     text-transform: uppercase;
     cursor: pointer;
+    --color: transparent;
+    --hover-color: var(--white);
+    background-color: var(--color);
+    animation: Hoveroutbtn ease 0.3s;
 }
 
 .body__lable-btn:hover{
-    background-color: var(--white);
+    background-color: var(--hover-color);
     border: 1px solid var(--white);
+    animation: Hoverbtn ease 0.3s;
 }
 
 .body__item:nth-child(1) .body__lable{
@@ -530,11 +535,19 @@ html{
 }
 
 .body__item-map--btn{
+    --color:transparent;
+    --hover-color: var(--white);
+    background-color: var(--color);
     border: 1px solid var(--white);
+    animation: Hoveroutbtn ease 0.3s;
+    transition: 0.3s;
 }
 
 .body__item-map--btn:hover{
+    --hover-color: var(--white);
+    background-color: var(--hover-color);
     color: var(--black);
+    animation: Hoverbtn ease 0.3s;
 }
 
 .body__lable-body--heading{
@@ -645,7 +658,6 @@ html{
 }
 
 .body__content-btn{
-    background-color: var(--white);
     border: 1px solid var(--white);
     width: 200px;
     padding: 15px 10px;
@@ -654,12 +666,17 @@ html{
     text-transform: uppercase;
     cursor: pointer;
     color: var(--black);
+    --color:var(--white);
+    --hover-color: transparent;
+    background-color: var(--color);
+    animation: Hoveroutbtn ease 0.3s;
 }
 
 .body__content-btn:hover{
     border: 1px solid var(--white);
-    background-color: transparent;
     color: var(--white);
+    background-color: var(--hover-color);
+    animation: Hoverbtn ease 0.3s;
 }
 
 .body__res-btn{
@@ -721,4 +738,95 @@ html{
     color: var(--white);
 }
 
-/* Footer  */
+.body__footer-box{
+    text-align: center;
+    background-color: var(--yellow);
+    min-height: 100vh;
+    padding-bottom: 40px;
+}
+
+.body__footer-header{
+    padding: 80px 0px 40px 0px;  
+    font-size: 60px;  
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+
+.body__footer-desc{
+    max-width: 30%;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 40px auto 40px;
+    color: var(--black);
+}
+
+.body__footer-desc--notice{
+    font-size: 16px;
+    padding-top: 15px;
+}
+
+.body__footer-input{
+    width: 20%;
+    display: block;
+    margin: 15px auto;
+    padding: 12px 9px 9px;
+    background-color: transparent;
+    appearance: none;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    appearance: none;
+    line-height: 1;
+    letter-spacing: 2px;
+}
+
+.body__footer-btn{
+    font-size: 20px;
+    margin: 50px auto 0px;
+    border: 1px solid var(--black);
+    border-radius: 15px;
+    width: 150px;
+    padding: 10px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.body__footer-btn:hover{
+    background-color: var(--yellow-hover);
+}
+
+.body__footer-logo{
+    --color: var(--yellow-logo);
+    --hover-color: var(--white);
+    display: block;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: 40px auto;
+    color: var(--color);
+    animation: Hoverouttext ease 0.3s;
+}
+
+.body__footer-logo:hover{
+    color: var(--hover-color);
+    animation: Hovertext ease 0.3s;
+}
+
+.body__footer-end{
+    display: block;
+    margin-bottom:3px ;
+    font-size: 16px;
+    --color : var(--end-text);
+    --hover-color : var(--end-text-hover);
+    color: var(--color);
+    animation: Hoverouttext ease 0.3s;
+}
+
+.body__footer-end:hover{
+    color: var(--hover-color);
+    animation: Hovertext ease 0.3s;
+}
+
