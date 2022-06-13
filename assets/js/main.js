@@ -83,3 +83,4 @@ var auto2 = setInterval(function(){
     }
     return y;
 },3000);
+
