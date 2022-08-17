@@ -73,11 +73,11 @@
     }
 
     .body__slide-icon--item {
-        font-size: 20px;
-        line-height: 40px;
+        font-size: 16px;
+        line-height: 16px;
         border: 2px solid var(--white);
-        width: 25px;
-        height: 25px;
+        width: 18px;
+        height: 18px;
         padding: 3px;
     }
 
