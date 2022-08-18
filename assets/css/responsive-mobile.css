@@ -110,10 +110,6 @@
         font-size: 16px;
     }
 
-    .body__slide-icon--list{
-        justify-content: space-evenly;
-    }
-
     .body__slide-icon--item {
         font-size: 16px;
         line-height: 16px;
@@ -124,7 +120,7 @@
     }
 
     .body__press--item{
-        height: 350%;
+        height: 450px;
     }
 
     .body__picture-map{
