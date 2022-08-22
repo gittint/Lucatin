@@ -42,6 +42,10 @@
         display: none;
     }
 
+    .slide__footer--item:hover::after{
+        visibility: hidden;
+    }
+
     .body__item {
         display: block;
         height: 100%;
